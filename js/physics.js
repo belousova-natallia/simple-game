@@ -99,7 +99,10 @@ handleHydrantCollision: function (data, entity) {
                 mariya.y = entity.y - mariya.h + 10;
                 mariya.velY = 0;
                 if ( Game.dropMagic === true){
+                
                 entity.currentState = entity.states.watering;
+                var waterSound =  new Audio("audio/water.mp3"); 
+                waterSound.play();
              
             Game.dropMagic = false; 
 

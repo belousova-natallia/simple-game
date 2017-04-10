@@ -1,17 +1,17 @@
 var Game = {
     init: function () {
-
+        var parent = document.getElementById("place-canvas")
         var canvas1 = document.createElement('canvas');
         canvas1.id = "bg1-canvas";
         canvas1.width = 800;
         canvas1.height = 480;
-        document.body.appendChild(canvas1);
+        parent.appendChild(canvas1);
 
         var canvas2 = document.createElement('canvas');
         canvas2.id = "fg-canvas";
         canvas2.width = 800;
         canvas2.height = 480;
-        document.body.appendChild(canvas2);
+        parent.appendChild(canvas2);
       
         var bg1Canvas = document.getElementById("bg1-canvas");
         var fgCanvas = document.getElementById("fg-canvas");
@@ -174,7 +174,42 @@ var Game = {
                 }
 
                 
+                    /////////////
 
+                                    if(data.entities.volume.currentState === data.entities.volume.states.volumeOff){
+                    Game.backgroundMusic.pause();
+
+                }
+                else if(data.entities.lives.sound.paused && data.entities.lives.soundEnd.paused &&
+                    Game.getToTheFinalMusic.paused && data.entities.volume.currentState === data.entities.volume.states.volumeOn
+                    && data.entities.mariya.x < data.canvas.w ){
+                    Game.backgroundMusic.play();}
+
+                var elem = document.getElementById('fg-canvas');
+                if (elem){
+                var elemLeft = elem.offsetLeft;
+                var elemTop = elem.offsetTop;
+                   
+             // Add event listener for `click` events.
+                elem.addEventListener('click', function(event) {
+                var x = event.pageX - elemLeft,
+                    y = event.pageY - elemTop;
+     
+        if (y > 0 && y < 5 + 35 && x > 735 && x < 740 + 45) {
+
+            if(data.entities.volume.currentState === data.entities.volume.states.volumeOff){
+                data.entities.volume.currentState = data.entities.volume.states.volumeOn
+            } else{
+                data.entities.volume.currentState = data.entities.volume.states.volumeOff
+            }
+        }
+  
+
+}, false);
+
+}
+
+                    ////////////
                 
            setTimeout(function() {
             window.requestAnimationFrame(loop);

@@ -4,10 +4,66 @@
     <meta charset="utf-8" />
     <title>My Game</title>
       <link href="css/stylesheet.css" rel="stylesheet" >
+
+
 </head>
 <body>
+    
+  <!-- Begin Header Wrapper -->
+    <div id="header-wrapper">
+      <!-- Begin Header -->
+
+        <div id="logo">SUPER Mariya</div>
+        <!-- Logo -->
+
+
+      <!-- End Header -->
+    </div>
+  
+  <!-- End Header Wrapper -->
+
+ <!-- 
+    <div id="place-canvas">
+      <canvas id="mycanvas" width="800" height="480"></canvas>
+    </div> -->
+ 
+<div id="container">
+
+    <div class="intro">
+      <h3> Цель игры – пройти уровень, прыгая с платформы на платформу, остаться невредимым, и собрать ценные предметы (бриллианты, капельки), разбросанные по всей территории уровня.</h3>
+    </div>
+        <div id="about">
+      <div class="one-fourth">
+        <h4>Управление игрой</h4>
+        <p>Стрелки влево, вправо, вверх и их комбинации <img src = "./img/arrows.png" width=50px> <br> Возможности игрового персонажа: ходит вперед-назад, прыгает, перепрыгивает препятствия</p>
+      </div>
+      <div class="one-fourth">
+        <h4>Потеря жизни</h4>
+        <p>При соприкосновении с огнем или падении с платформы происходит потеря жизни. Если жизней больше нет - игра заканчивается.</p>
+      </div>
+      <div class="one-fourth">
+        <h4>Приобретение жизни</h4>
+        <p>За каждые 40 собранных бриллиантов <img src = "./img/dimonds.gif" width=60px> добавляется одна жизнь </p>
+      </div>
+      <div class="one-fourth last">
+        <h4>Дополнительные возможности</h4>
+        <p>При соприкосновении с разноцветной капелькой <img src = "./img/drop.png" width=20px> появляется возможность включить один пожарный гидрант, запрыгнув на него, и потушить огонь.</p>
+      </div>
+    </div>
+    
+
+
+<div class="play">
+<a href ="game.html" target="_blank"> Играть в игру </a>
+</div>
+
+
+</div>
+    <div id="footer">
       
-	<canvas id="mycanvas" width="800" height="480"></canvas>
+    </div>
+
+	
     <script src='js/start.js'></script>
     <script src="js/entities.js"></script>    
     <script src="js/input.js"></script>

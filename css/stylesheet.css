@@ -3,13 +3,44 @@ body {
     padding: 0;
     margin: 0;
     background-color: #f7f7f7;
+    font-size: 20px;
+    
+
+}
+
+@font-face {
+    font-family: "PixelEmulator";
+    src: url("../font/pixel-emulator.otf");
+}
+
+#logo {
+    font-family: "PixelEmulator";
+    font-size: 55px;
+    color: MediumVioletRed;
+    height: 110px;
+    text-align: center;
+    padding-top: 40px;
+    background: url(../img/JnRLayer1.png) no-repeat; 
+    background-size:100%;
+
+
+}
+#container  {
+   width: 1000px;
+    margin: 0 auto;
+    
+}
+
+#place-canvas {
+ 
+ height:500px;  
 }
 
 canvas {
     display: block;
     position: absolute;
     margin: auto;
-    top: 0;
+    top: 0px;
     right: 0;
     bottom: 0;
     left: 0;
@@ -23,28 +54,49 @@ canvas {
     -webkit-user-drag: none;
 }
 
-#bg-canvas {
-    z-index: 0;
+.intro {
+    margin-top: 50px;
+    height: 100% 
 }
-#bg1-canvas {
-    z-index: 1;
-}
-#bg2-canvas {
-    z-index: 2;
-}
-#bg3-canvas {
-    z-index: 3;
-}
-#bg4-canvas {
-    z-index: 4;
+#about {
+ overflow: hidden
 }
 
-#fg-canvas {
-    z-index: 5;
-   
+.one-fourth {
+    width:22%;
+    
+    margin-right:4%;
+    float:left;
 }
 
-@font-face {
-    font-family: "PixelEmulator";
-    src: url("../font/pixel-emulator.otf");
+.last {
+    margin-right:0 !important;
+    clear:right;
+}
+ 
+ h4 {
+   font-family: "PixelEmulator";
+
+    color: MediumVioletRed;
+ }
+
+#footer {
+    background: url(../img/JnRLayer1.png) no-repeat; 
+    background-size:100%;
+    height: 100px;
+}
+
+.play a{
+ color: MediumVioletRed;
+ text-align: center;
+ font-size: 29px
+}
+
+.play{
+width: 180px;
+margin: 100px auto;
+padding: 50px;
+border: 1px solid MediumVioletRed;
+
+
 }

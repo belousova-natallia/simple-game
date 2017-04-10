@@ -28,7 +28,7 @@ var Input = {
                     data.entities.mariya.currentState = data.entities.mariya.states.walking;
                     data.entities.mariya.direction = "right";
                     Game.backgroundMusic.pause();
-                    if(mariya.x < background4.w + background4.w/1.2){
+                    if(mariya.x < background4.w + background4.w/1){
                     Game.getToTheFinalMusic.play();}
                     else{
                     Game.getToTheFinalMusic.pause();
@@ -178,8 +178,8 @@ var Input = {
                 });
 
             } 
-            if ( mariya.realCoordinate > Game.endPoint && mariya.x + mariya.w > background4.w + background4.w/1.2 + mariya.w) {
-                mariya.x = background4.w + background4.w/1.2;
+            if ( mariya.realCoordinate > Game.endPoint && mariya.x + mariya.w > background4.w + background4.w/1 + mariya.w) {
+                mariya.x = background4.w + background4.w/1;
                 Game.getToTheFinalMusic.pause(); 
             }
 
