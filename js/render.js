@@ -91,6 +91,8 @@ var Render = {
             
                bg.remove();
                fg.remove();
+               data.entities = {};
+               Game.dropMagic = false;
         }
   
 
@@ -142,6 +144,8 @@ data.canvas.fgCtx.rect(0,0, data.canvas.fgCanvas.width, data.canvas.fgCanvas.hei
             
                bg.remove();
                fg.remove();
+               data.entities = {}
+               Game.dropMagic = false;
          }
   
 }, false);

@@ -199,6 +199,7 @@ var Game = {
 
             if(data.entities.volume.currentState === data.entities.volume.states.volumeOff){
                 data.entities.volume.currentState = data.entities.volume.states.volumeOn
+                Game.backgroundMusic.play();
             } else{
                 data.entities.volume.currentState = data.entities.volume.states.volumeOff
             }
