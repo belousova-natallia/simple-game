@@ -14,9 +14,9 @@ var elem = document.getElementById('mycanvas'),
         context.strokeStyle = "MediumVioletRed";
         context.strokeRect(150, 150, 475, 150);
 
-        context.font = '90px PixelEmulator';
+        context.font = '75px PixelEmulator';
         context.fillStyle = "MediumVioletRed";
-        context.fillText("Start to play", 170, 250);
+        context.fillText("Start the game", 170, 250);
 
 
 // Add event listener for `click` events.
