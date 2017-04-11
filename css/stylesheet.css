@@ -89,13 +89,13 @@ canvas {
 .play a{
  color: MediumVioletRed;
  text-align: center;
- font-size: 29px
+ font-size: 35px
 }
 
 .play{
-width: 180px;
+width: 120px;
 margin: 100px auto;
-padding: 50px;
+padding: 50px 85px;
 border: 1px solid MediumVioletRed;
 
 
