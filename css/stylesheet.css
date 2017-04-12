@@ -58,7 +58,7 @@ canvas {
     margin-top: 50px;
     height: 100% 
 }
-#about {
+.about {
  overflow: hidden
 }
 
@@ -67,6 +67,11 @@ canvas {
     
     margin-right:4%;
     float:left;
+}
+
+.one-half {
+    width:48%;
+      float:left;
 }
 
 .last {
