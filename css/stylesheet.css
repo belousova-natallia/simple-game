@@ -4,6 +4,7 @@ body {
     margin: 0;
     background-color: #f7f7f7;
     font-size: 20px;
+
     
 
 }
@@ -94,14 +95,21 @@ canvas {
 .play a{
  color: MediumVioletRed;
  text-align: center;
- font-size: 35px
+ font-size: 35px;
+ font-family: "PixelEmulator";
 }
 
-.play{
-width: 120px;
+.play {
+width: 350px;
 margin: 100px auto;
-padding: 50px 85px;
+padding: 50px 65px;
 border: 1px solid MediumVioletRed;
+font-family: "PixelEmulator";
 
 
+}
+.presentation {
+    margin: 100px auto;
+    width: 150px;
+    padding: 5px 20px;
 }
